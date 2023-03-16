@@ -1,0 +1,40 @@
+public class Account {
+  private double balance;
+
+  // Constructor with a parameter
+  public account(double balance) {
+    balance = balance;
+  }
+  
+ 
+}
+public double getMonthlyInterest() {
+    return (balance * monthlyInterestRate);
+}
+ 
+public double getBalance(){
+    return balance;
+
+    public void withdraw(double amount) {
+        balance = balance - amount;
+
+public void deposit(double amount) {
+            balance = balance + amount;
+
+            public void setBalance(double balance) {
+                balance = balance;
+
+
+  // Call the constructor
+  public static void main(String[] args) {
+    Account myAccount = new Account(200);
+    System.out.println("My initial balance = " + myAccount.balance);
+    Account myAccount = new Account(140);
+    System.out.println("My deposit balance = " + myAccount.balance);
+    Account myAccount = new Account(100);
+    System.out.println("My withdrawal balance = " + myAccount.balance);
+  }
+}
+
+/* Reference: This code is written by me  and the help ofhttps://stackoverflow.com/
+Reference list entry: Stack Overflow - Where Developers Learn, Share, & Build Careers (no date). Available at: https://stackoverflow.com/.*/
