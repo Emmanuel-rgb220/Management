@@ -1,0 +1,33 @@
+public class AccountHolder {
+   private String name;
+   private String address;
+   private String gender;
+   private int age;
+   public AccountHolder SetValues(){
+      Scanner sc = new Scanner(System.in);
+      String name = sc.nextLine();
+      System.out.println("Please enter the name of the account Holder: " + name);
+      int age = sc.nextInt();
+      System.out.println("Please Enter the age of the Account Holder: " + age);
+      int address = sc.nextInt();
+      System.out.println("Please Enter the address of the Account Holder: " + address);
+      int gender = sc.nextInt();
+      System.out.println("Please Enter the gender of the Account Holder: " + gender);
+      
+      this.name = name;
+      this.age = age;
+      this.gender = gender;
+      this.address = address;
+
+      return this;
+   }
+   
+   public static void main(String args[]) {
+      AccountHolder obj = new AccountHolder();
+      obj = obj.SettingValues();
+      obj.display();
+   }
+}
+
+/* Reference: This code is written by me and the help of https://www.tutorialspoint.com/
+Reference list entry: Can we return this keyword from a method in java (no date). Available at: https://www.tutorialspoint.com/can-we-return-this-keyword-from-a-method-in-java#:~:text=Yes%2C%20you%20can%20return%20this,current%20object%20will%20be%20returned.*/
